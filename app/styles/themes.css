@@ -1,0 +1,52 @@
+html {
+  /* base variables */
+  --primary: #000;
+  -secondary: #fff;
+  ---h5-font-size: 1.25rem;
+  --base-font-family: "Roboto", sans-serif;
+  /* custom variables */
+
+  /* base styles */
+}
+
+* {
+  font-family: var(--base-font-family);
+}
+
+[data-theme="forbes"],
+[data-theme="default"] {
+  /* base variables */
+  --primary: #181716;
+  --primary-accent: #fff;
+  --secondary: #000;
+  --secondary-text-accent: #fff;
+
+  /* custom variables */
+  --background-primary: var(--primary);
+  --background-secondary: var(--secondary);
+  --background-primary-text-accent: var(--primary-accent);
+  --background-secondary-text-accent: var(--secondary-text-accent);
+  --condensed-font-family: "Roboto Condensed", sans-serif;
+  --condensed-font-weight: bold;
+
+  /* base styles */
+}
+
+[data-theme="kiplinger"] {
+  /* base variables */
+  --primary: #fff;
+  --primary-accent: #000;
+  --secondary: #cc2936;
+  --secondary-text-accent: #fff;
+  --base-font-family: "Playfair", serif;
+
+  /* custom variables */
+  --background-primary: var(--primary);
+  --background-secondary: var(--secondary);
+  --background-primary-text-accent: var(--primary-accent);
+  --background-secondary-text-accent: var(--secondary-text-accent);
+  --condensed-font-family: "Playfair", serif;
+  --condensed-font-weight: 400;
+
+  /* base styles */
+}

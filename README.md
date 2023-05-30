@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- NextJS 13
+  - Uses Turbopack (still in beta but seems pretty fast)
+- Tailwind implementation
+- Brand-based themes (`Forbes` and `Kiplinger`):
+  - Check out `app/styles/themes.css` for an example of implementing different styles for each theme using CSS variables
+  - Can switch between `Forbes` and `Kiplinger` themes modifying the `host` variable in `app/profile/[userId]/page.tsx`
+- Storybook implementation:
+  - Check out `ui/Button/index.stories.tsx` and `ui/Chip/index.stories.tsx` for example stories
+  - Brand-based themes are implemented in Storybook and can be changed in the top toolbar
+- SSR:
+  - `/profile/[userId]` is rendered server-side though it does include a single client component (`components/Profile/About.tsx`)
+  - Running `npm run build` will give a breakdown of how each route is rendered
 
-## Getting Started
-
-First, run the development server:
+Run app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run Storybook:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run storybook
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Resources
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[NextJS + Tailwind Design System](https://www.youtube.com/watch?v=T-Zv73yZ_QI&t=1s)
